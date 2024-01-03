@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fisrt page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+Tamil&family=Oxanium&family=Poppins:wght@600&family=Raleway:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav_bar">
+        <div style="display:flex;flex-direction:row;" id="brand"><h1 style="padding:5px;">Movie</h1><h1 style="background-color:rgb(255, 255, 255);padding:5px;margin-left:5px;color:black;border-radius:5px;filter:drop-shadow(0 0 6px white);">Hub</h1></div>
+        <input type="text" name="" id="Search"  placeholder="Search" onkeyup="show()">
+        <h2 id="movie" onclick="movie()"><img   style="filter:drop-shadow(0 0 10px #45ff45);" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMdJREFUSEvtVcENwyAMPD/Zopki+YVM1nSSrgK/MEXZgqcrUhqlUSlIhDyq8DT2ne9ANqHyocr4OI5Auk4y+ApAFqpSBLopMSmPsyjoXfsAcCkEf5crLcywJeBXgAYG3z0ZgRolJhvUJWO+vnftjKOFmZtfK1gupOvGYJf1hIEkK5ZFEDqZLQt+jrmxbIJcW7Z5DPaNxS3a6ZFPgrSR0W+aLs3LOAmSPv2nRXuOa6uFaT6m6XqmJA3+nfB94RSCRsuP28m1FDwBZImuGVb0oPsAAAAASUVORK5CYII="/>Movie</h2>
+        <h2 id="Tv" onclick="tv()"><img  style="filter:drop-shadow(0 0 10px #ff7575);"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANVJREFUSEvtlUEOwiAQRT9LbqGngGU9mXoSexNZwinkFizRIbS1tYHGsYkLZtlk/vvzQ34Fdh6xsz6qgKD1BUAvrfXvZoLWBwCdtLYvmSwCkniMZwAeQpwGSBKP8UYACHGV1pKJ1akBSOj+uoDcJkhSGcQBL507fn0BLWa3E4RA5HyDOO2PFwStuxwHLXPG5NjMHKDUI0fBER92jXQuxTldoFSkD9K56ssqOQgLnQb4SKtFVH3CLaL/juiXXTTW+LJN6SdC3c+Z9TblKLJ+OFwwq5q3wJ/hIZ4Zbm4o3gAAAABJRU5ErkJggg=="/>TV Shows</h2>
+        <h2 id="Popular" onclick="run()"><img style="filter:drop-shadow(0 0 10px #ff8f45);"   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAP5JREFUSEvtlE0OgjAQhR8hJiZ6ge7wJnoTD6GJO1m6wDN4FK/CjgtIYqKmZIolpT8MBNjBttP3zbw3NMLMXzSzPhYA6/Boi4rTNgXk1SaJrFTaowEk4oMMAhSXdUJC4vbOfZ6o80/8RARVp2r7TqAuf+MHJBKsfgcb0pwDe0jkGtIL0LpMbZGAAbHFxb3cabtYgNNZnViiIcoHmuzfOYlrewgislcaDNnbmelzbQXloWwxxe2MnC3yiTed2WEy4s4EXeIOhDbFsCX0xzUT9BE3IaGVDVpUnDdHSNA6dnrKvg1WQSsDM/2hQqxFUwmyWzQ1aJLHrqupBcBGNrtFFUqqihmq+wtbAAAAAElFTkSuQmCC"/>Popular</h2>
+        <Button onclick="pre_page()">Pre</Button><button onclick="Next_page()">Next</button>
+    </div>
+
+    <div id="Container">
+        <h2 id="top_text"></h2>
+        <div id="movie_list"></div>
+      
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
